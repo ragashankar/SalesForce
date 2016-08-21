@@ -1,0 +1,38 @@
+Objectives : How to setup and maintain a User, Troubleshoot common access visibility issues for a User
+
+Steps:
+1. Click setup on the top right corner of the Force Dev account
+2. Under Administer section, click Users (Diplays Users that are currently in salesforce Instance)
+3. If a User is not active, then the active box displays no tick.
+4. There are two options of viewing a User acc, view only mode(when u directly click on the username) and Edit Mode
+5. Click the user(my user), i can see all the Hover-over links(lists) like permission set assignments,personal grps etc..
+6. Click on the Login History (Users logged in at what time, whether login is success/facing any issues etc..)
+7. We can export the login details of many users in .csv file
+
+Login History:
+Check the login hist on the User rec, if it shows failure, the reason might be due to a bad username/password or they might have logged in 
+to a different environment (test envi using dev credentials)
+
+To create a new User:
+1. Go to Administer -> Manage Users -> Users
+2. Click New User button
+3. Fill all the req info (Name,email,username..)
+4. Eg: Set role of the user as marketing team,licsence as salesforce,profile as marketing profile, tick the featured liscense as
+   Marketing User
+5. Change the time settings acc to their specific time standards
+6.Click recieve newsletter and generate password for the user immidetly button and save
+
+After creation: (Many options can be used like below)
+1. Four buttons: Edit, sharing,reset pwd and freeze
+2. Reset password: If the users typed wrongly/forgot  password and have been LOCKED OUT, then reset pwd is used by admin
+                    This can be checked in login history whether user has locked out
+Exception to pt 2:
+if the user uses sandbox, then he might not have a vaild email and so auto notify pwd thro mail is not successful
+In that case, we can click Edit and click "Generate new password and notify users immediately" and save.
+
+3. Freeze : If the User is moving out of the company but has been assigned with many scheduling jobs and reports to be
+run on specifed time, then that should not break. The admin can freeze the user, reassign all the jobs to other active user
+and then deactivate this User (by clicking edit and unchecking the active box)
+
+
+
