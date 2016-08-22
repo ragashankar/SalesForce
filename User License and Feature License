@@ -1,0 +1,71 @@
+Standard User License :
+A. Salesforce : access to custom apps and std CRM func
+B. Knowledge only User: access to SF knowledge app, acc to custom apps and some std apps such as articles,
+article mgmt, chatter, home,profile, custom obj,custom tabs
+SF knowledge profile access to article tab, Need 'Manage articles' permission for access to article mgmt
+
+C. Identity : Grants users to acces to SF Identity features. SF ID connects with ext apps and gives autorization and admin controls
+
+D. Ext Identity : grants users outside of Org to connect with ext orgs such as SOcial media
+
+E. Work.com : Users who wants to administer work.com features such as summary cycles etc. , who does not have salesforce li
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Note: First of all, Salesforce.com is built on the Force.com platform - they are more or less interchangeable from a technical standpoint.
+It's a mere matter of marketing semantics.  Force.com applies to the infrastructure and codebase that is the foundation 
+for the entire Salesforce solution.  They are enforcing the Force.com concept more so because 
+Salesforce can do so much more than CRM nowadays.
+
+Secondly, regarding the functionality situation.  In this case I think you are referring to the Force.com Edition
+in comparison to the standard Salesforce.com Editions (Professional, Enterprise, etc.).  In this case, yes there is a difference.
+The Force.com Edition (or Platform Edition, depending on the marketing materials you have in hand, what day of the week it is and
+whether or not your sneakers have green stripes) is a standard Enterprise Edition (if you buy in conjunction with a full Enterprise Edition) 
+minus the CRM functionality - so no Leads, Opportunities, etc. (as far as I know).  This Platform Edition is aimed at providing customers
+with the "platform" on which to build custom applications - for companies that do not so much use Salesforce for the CRM.
+
+------------------------------------------------------------------------------------------------------------------------------------
+Force.com Liscense:
+Salesforce platform : Users can access custom apps (incl. AppExchange) but not standard CRM functionality (forecasts, opportunities). 
+In addition can use core platform functionality (Accounts, contacts, reports, dashboards, documents and custom tabs) 
+Users with this license can only view dashboards if the running user also has the same license.
+
+Force.com - one app: Users can access one custom app but not standard CRM functionality. Read only on Accounts and Contacts objects. Users with this
+license can only view dashboards if the running user also has the same license
+
+------------------------------------------------------------------------------------------------------------------------------------
+Chatter User Licenses | Salesforce
+Chatter User Licenses
+All standard Salesforce licenses allow free Chatter access for everyone in your organization. Salesforce also offers Chatter-specific licenses: Chatter External, 
+Chatter Free, and Chatter Only (also known as Chatter Plus).
+Available in: Salesforce Classic
+Chatter External and Chatter Free licenses are available in: Group, Professional, Enterprise, Performance, Unlimited, Contact Manager, and Developer Editions
+Chatter Only (also known as Chatter Plus) licenses are available in: Professional, Enterprise Unlimited, and Performance Editions
+
+Chatter External
+This license is for users who are outside of your company’s email domain. 
+These external users, also called customers, can be invited to Chatter groups that allow customers. 
+Customers can access information and interact with users only in the groups they’re invited to. 
+They have no access to Chatter objects or data.
+
+Chatter Free
+The Chatter Free license is for users who don’t have Salesforce licenses but need access to Chatter. These users can access standard Chatter items such as people, profiles, groups, and files, but they can’t access any Salesforce objects or data. Chatter Free users can also be Chatter moderators.
+Chatter Free users don’t see tabs like other Salesforce users. Chatter Free users access feeds, people, groups, and files
+using the links in the sidebar of the page.Salesforce administrators can upgrade a Chatter Free license to a 
+standard Salesforce or Chatter Only license at any time. You can’t convert a standard Salesforce or Chatter Only license
+to a Chatter Free license.
+
+Chatter Only (Chatter Plus)
+The Chatter Only license is also known as the Chatter Plus license. It is for users that don’t have Salesforce licenses
+but need access to some Salesforce objects in addition to Chatter. Chatter Plus users can be Chatter moderators and 
+have access to standard Chatter people, profiles, groups, and files pages. They also can view:
+Salesforce accounts and contacts
+Use Salesforce CRM Content, Ideas, and Answers
+Access dashboards and reports
+Use and approve workflows
+Use the calendar to create and track activities
+View and modify up to ten custom objects
+Add records to groups
+
+
+
