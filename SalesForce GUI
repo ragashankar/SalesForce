@@ -1,0 +1,37 @@
+GUI:
+In Setup -> Home page (Home obj) :
+Can see my name, chat tab(we can post, file,new event..),create new button(to create account,event,task,lead etc.. Most company disable this)
+Can view recent items that we have seen lately (example: Lead record (name of user in an org),)
+Can access recycle bin (Can view My recycle bin,items that i have deleted and also all recycle bin, default deletion of objs in bin - 15 days)
+If a person has accidently deleted, the admin can go to all recycle bin option and resotr the obj.
+In home page, can view recommendations, follow a group in chatter and post the posts from the chatter to ur home page.
+Can view calender, create new events, mini requests
+Can create tasks, access tasks need to be addressed
+Can view items to approve
+--------------------------------------------------------
+Setup link on top right corner:
+Some org have a setup in top right corner, others have it under our name in top right. How to control these changes?
+A: Setup - > Customize -> User Interface  - > Enable Improved Setup User Interface (Uncheck if u don't want to have a separate setup link
+on the top right and instead have it under ur name in the top right screen)
+---------------------------------------------------------------------
+Note: Study all User Interface options and checkboxes and their usage
+---------------------------------------------------------------------
+User Interface settings:
+A. Enable collapsable sections: Lts users collapse or expand sections on their record detail pages  by using arrow icon next to the 
+section heading 
+
+B. Show Quick create : In accounts, contacts,oppor,leads etc. a record can be quickly created with minimal info. 
+We can also create a new record in lookup dialog by chcking the show quick create button in UI. Many orgs disable it to reduce
+too much incomplete records and push users to search for already exisitng records before creating a duplicate record.
+
+C. Enable Hover details : When I hover over a link in recent items in home tab or lookup page, i can get details that appear automatically
+showing some info about that link without clicking the link. Uncheck if not needed.
+
+D.  Enable Related List Hover Links :  When u go to a record detail, u usually see the related list hover links on the top of the record
+example: Permission set assignments, login history etc.. (like a quick link to go to that part of the page). Unchekc if u dont need it
+
+E. Enable Separate Loading of Related Lists : First the record details are loaded followed by separate loading of related list at the top page
+of the rec detail. Its for improving performance.
+
+F. 
+
