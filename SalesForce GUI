@@ -13,6 +13,18 @@ Setup - > customize -> obj name(eg:acc)- >Cust fields on obj(acc) page -> Edit o
 3. Can make related list move up and down based on customer priority, can also remove a child rec.
 4. Can add more fields in child records like fax number...
 
+Multiple page layout:
+If we have , say, sales team and Cust support team and each wants the account tab to be accessed at diffrent views, say, 
+sales team want to view Name, contacts and cust supp team wants only name and case info, then multiple page layout must be done for
+a single account object.
+Setup - > customize -> obj name(eg:acc)- > 1. Acc(marketing) layout, 2.Acc(sales), 3. Acc(support) layout.
+-------------------------------------------------------------------------------------------------------------
+Customize Tabs(Objs):
+Setup -> Customize -> Tab Names and Lables -> Rename Tabs and Lables
+Rename , say, Leads to Prospects and save it
+If u wanna move the Prospects tab up i.e near to say, home tab, go to '+' sign and click all tabs -> Customize tabs
+We can also add other tabs.
+--------------------------------------------------------------------------------------------------------------
 In Setup -> Home page (Home obj) :
 Can see my name, chat tab(we can post, file,new event..),create new button(to create account,event,task,lead etc.. Most company disable this)
 Can view recent items that we have seen lately (example: Lead record (name of user in an org),)
@@ -65,5 +77,25 @@ H. Enable Enhanced lists : Enhanced lists give you the ability to quickly view, 
 daily productivity. When enabled with the Enable Inline Editing setting, users can also edit records directly from the list, 
 without navigating away from the page. This option is enabled by default. We can select multiple entries in list and edit them at same time
 
-I. 
+I. Enable the Salesforce Classic 2010 User Interface Theme : This option is not related to Lightning Experience. 
+In this case, “Salesforce Classic 2010 user interface theme” refers to the newer version of Salesforce Classic, 
+which is the interface that immediately precedes Lightning Experience. Enabling this option turns on the
+updated Salesforce Classic look and feel. Disabling it turns on the 
+Salesforce Classic 2005 user interface theme —the classic, classic Salesforce interface.
+
+J. Enable Tab bar organizer: Checking this, puts tabs that are displayed out of screen under drop down list. Unchecking this, adds tabs
+with horizontal scrolling of the page. Does not work with partner/customer portal. Available to Salesforce Classic 2010 user interface theme.
+Cannot be used in Internet Explorer 6.
+
+K. Enable printable view list : Go to any tab, say, acc tab, click to view all accounts, u get a list, there is a print option on the right 
+corner of the list. U can take a printout of all the acc details. Uncheck this box, if u dont want to see the print option
+
+L. Enable Spell Checker on Tasks and Events
+Available in all Editions. Enables the Check Spelling button when users create or edit tasks or events. 
+The spell checker analyzes the Description field on events and the Comments field on tasks.
+
+M. Enable Customization of Chatter User Profile Pages
+Enables administrators to customize the tabs on the Chatter user profile page. This includes adding custom tabs or removing default tabs. If disabled, users see the Feed and Overview tabs only.
+
+
 
