@@ -1,4 +1,16 @@
 GUI:
+Page layouts:
+---------------------------------------------------------------------
+User Interface uses: (For Page layouts in objects (acc,opp..))
+1. For field placements in a record (whether we want ph number to be visible at the top or btm)
+2. For making a field required or invisible
+3. For making a related list (child records) as visible/invisible.
+
+Page layout can be done for each record in an object. Page layouts are for objects.
+Setup - > customize -> obj name(eg:acc)- >Cust fields on obj(acc) page -> Edit obj(acc) layout
+1. Can move the fields anywhere to be placed
+2. Can make a field required/read-only by an option provided at the right corner when we hover around the field
+
 In Setup -> Home page (Home obj) :
 Can see my name, chat tab(we can post, file,new event..),create new button(to create account,event,task,lead etc.. Most company disable this)
 Can view recent items that we have seen lately (example: Lead record (name of user in an org),)
@@ -33,5 +45,23 @@ example: Permission set assignments, login history etc.. (like a quick link to g
 E. Enable Separate Loading of Related Lists : First the record details are loaded followed by separate loading of related list at the top page
 of the rec detail. Its for improving performance.
 
-F. 
+F. Enable separate loading of related lists of external objs : First loads rec details followed by loading of related list of ext objs
+that are not in salesforce objs.
+
+G. Enable Inline Editing : In a record detail, we can edit directly without clicking edit button everytime when we want to update record info
+  Displayed by a 'pencil' mark on the right of every rec detail.
+----------------------------------------------------------------------------
+This doesn't enable inline editing for profiles. Inline editing isn't available
+for accessibility mode, system fields, formula fields, case assignments, case email notifications, lead
+assignments, setup pages, on records for which you have read-only access, dashboards, documents,
+pricebooks, on records for which you have read-only access, All fields in Tasks except for Subject and
+Comment, All fields in Events except for Subject, Description, and Location, Full name fields of Person
+Accounts, Contacts, and Leads. However, their component fields are editable, for example, First Name and
+Last Name.
+-------------------------------------------------------------------------------
+H. Enable Enhanced lists : Enhanced lists give you the ability to quickly view, customize, and edit list data to speed up your
+daily productivity. When enabled with the Enable Inline Editing setting, users can also edit records directly from the list, 
+without navigating away from the page. This option is enabled by default. We can select multiple entries in list and edit them at same time
+
+I. 
 
