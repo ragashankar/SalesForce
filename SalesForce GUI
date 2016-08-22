@@ -25,6 +25,24 @@ Rename , say, Leads to Prospects and save it
 If u wanna move the Prospects tab up i.e near to say, home tab, go to '+' sign and click all tabs -> Customize tabs
 We can also add other tabs.
 --------------------------------------------------------------------------------------------------------------
+Create Tabs:
+Setup -> Customize -> Tabs -> create tabs
+We have custom obj tabs,visualforce tabs, web tabs, Lightining page tabs
+
+Custom Object Tabs—For your custom object data. Custom Object Tabs display the data of your custom object in a user interface tab. 
+Custom object tabs look and function just like standard tabs.
+
+Web Tabs—For other web content Custom Web Tabs display any external Web-based application or Web page in a Salesforce tab.
+You can design Web tabs to include the sidebar or span across the entire page without the sidebar.
+
+Visualforce Tabs—For Visualforce pages Visualforce Tabs display data from a Visualforce page. Visualforce tabs look 
+and function just like standard tabs.
+
+Flexible Page Tabs—For Flexible Pages, to include them in the Salesforce1 navigation menu. Flexible Page Tabs let you add 
+Flexible Pages to the Salesforce1 navigation menu.
+
+Lightning Page tabs- let you add Lightning Pages to the Salesforce1 navigation menu.
+--------------------------------------------------------------------------------------------------------------
 In Setup -> Home page (Home obj) :
 Can see my name, chat tab(we can post, file,new event..),create new button(to create account,event,task,lead etc.. Most company disable this)
 Can view recent items that we have seen lately (example: Lead record (name of user in an org),)
