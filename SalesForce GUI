@@ -10,6 +10,8 @@ Page layout can be done for each record in an object. Page layouts are for objec
 Setup - > customize -> obj name(eg:acc)- >Cust fields on obj(acc) page -> Edit obj(acc) layout
 1. Can move the fields anywhere to be placed
 2. Can make a field required/read-only by an option provided at the right corner when we hover around the field
+3. Can make related list move up and down based on customer priority, can also remove a child rec.
+4. Can add more fields in child records like fax number...
 
 In Setup -> Home page (Home obj) :
 Can see my name, chat tab(we can post, file,new event..),create new button(to create account,event,task,lead etc.. Most company disable this)
