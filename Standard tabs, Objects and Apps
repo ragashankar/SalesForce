@@ -1,0 +1,121 @@
+Standard Apps, Objects, & Tabs
+What are the differences between standard and custom components?
+
+Standard components (such as fields, objects, tabs, etc.) are included with Salesforce, while custom components are added by an administrator.  Standard components generally can be customized less than custom components (for instance, you can delete custom fields, while you cannot delete standard fields), as we’ll discuss later in this guide.
+
+It is important to understand what standard functionality is included with Salesforce for several reasons:
+
+You can extend and improve your organization’s CRM implementation with minimal effort.
+You can utilize Salesforce standards, without rebuilding functionality that already exists.
+You are prepared for certification.  Salesforce certification exams will expect that you understand their functionality, and the solutions they’ve created to meet customer needs.
+Standard Applications
+
+The following is not an exhaustive list (which may vary based on version/features of Salesforce), but covers the essentials:
+
+App Launcher
+
+Call Center
+
+Community
+
+Content
+
+Marketing
+
+Sales
+
+Salesforce Chatter
+
+Site.com
+
+Standard Objects / Tabs
+
+The following is not an exhaustive list (which may vary based on version/features of Salesforce), but covers the essentials:
+
+A Lead is essentially an unqualified prospect.  For instance, a collection of business cards gathered at a convention would usually be entered as new leads.  When a lead is qualified, it is then converted into a contact, account, and opportunity.  Web-to-lead will allow you to accept website submissions directly as Salesforce leads.  One lead = one person.
+
+An Account is typically an organization that is a qualified potential customer, an existing customer, partner, competitor, or has a relationship of similar significance.  The account is the glue that holds the relationships (contacts) and interactions (activities, opportunities, cases, etc.) with an organization.  The standard Salesforce account is configured for B2B (business to business) relationships.  One account = one organization.
+
+Consider Person Accounts (requires feature activation) to establish B2C (business to consumer) relationships.  One person account = one person.
+
+Contacts store an individual’s demographic information, such as phone numbers and email addresses, and are linked to accounts.  If a contact is not linked to an account then it is a “private” contact and only viewable by the contact owner or salesforce administrator.  One contact = one person.
+
+Data.com is a product offering from Salesforce that is a repository of both crowd-sourced and Dun & Bradstreet contact and account information.  You can use data.com to source new leads, contact, and accounts for your organization, as well as clean or update existing data.
+
+Cases are used to track support issues.  If a customer purchases a product or service, and calls in for support, this would get tracked using a case record.  An open case is unresolved, while a closed case is resolved.  Email-to-case allows customers to email a generic address (e.g. support@company.com) to automatically generate a case.  Web-to-case allows customers to submit a support request via a web form.  One case = one support issue.
+
+Solutions are used to document and communicate common resolutions to cases.  For instance, if customer A calls in with a problem and steps 1-5 must be taken to resolve the issue, these steps can be entered into a solution.  When customer B calls in with the same problem, instead of retyping steps 1-5, the customer support agent can reference the solution to quickly communicate the resolution.
+
+An Opportunity typically represents either a) a completed sale, b) a lost potential sale, or c) the potential for a future sale.  Opportunity data is referenced in forecasting.
+
+Products are typically used to store information about the goods or services that your organization sells.  This would include specifics like the name, product code, MSRP or sale price, and other details.
+
+Opportunity Products represent the products sold as line items within an opportunity (e.g. 2 widgets for $5,000/each).
+
+Price Books are used to establish different pricing structures for products.  For instance, your high-volume customers may receive a different price for many or all products than small-volume customers.
+
+A Quote can synchronize product data from its related opportunity record.  A quote can be easily generated in PDF format for email delivery.
+
+Assets represent the products associated with an account, and can be referenced for support issues.  For instance, a customer purchases a generator.  This product would be listed on an opportunity as an opportunity line item.  Upon sale completion, it may then be added to the account as an asset.  When the customer calls in with a problem with the generator, a case is generated and references the asset.
+
+Contracts are generally used to represent legal agreements with an account.
+
+Campaigns are used to track and measure marketing efforts.  Leads, contacts, and opportunities can be associated with campaigns.  Campaign rollup summary fields, ROI reporting, and campaign hierarchy are then used to measure various campaign statistics.
+
+Forecasts can be used to project revenue, and track sales quotas.  There are multiple versions of forecasting.  Many organizations use opportunity pipeline reporting instead of or in addition to forecasting.
+
+Reports are used to display, summarize, and chart record data.
+
+Dashboards are used to visually represent multiple reports on a single page.  A dashboard is comprised of many components.  Each component is typically a visual representation (chart) of report data.
+
+Answers allows users to ask questions, which can be answered by other users.  Answers can be used in conjunction with a customer portal to allow customers to ask and answers each others’ questions.  See it in action at Salesforce.
+
+Ideas allows users to create and vote on ideas.  The most popular ideas score the most points.  Ideas is ideally suited to capture product improvement ideas, and can be used in conjunction with a customer portal.  See it in action at Salesforce (click ideas) and at Starbucks.
+
+Activities are split into tasks and events.
+
+Tasks are phone calls, emails, and other follow up items.  They have an associated date, and an optional reminder.  They will appear in open activities until updated to a completed status, and will then appear in activity history.
+
+Events are scheduled appointments, with a defined start and end time, similar to an appointment in Outlook.
+
+Documents are files that are uploaded into Salesforce and referenced in other areas, such as application logos and email templates.  The documents tab is a legacy method of storing files.  Other methods of document storage and distribution such as Chatter Files and Salesforce Content are generally more commonly used for the storage and distribution of documents.
+
+An active User record is required in order for an individual of any role (employee, customer, partner) to login to your Salesforce org.
+
+Site.com is a product offering by Salesforce that allows users to create websites with dynamic content driven from data within their Salesforce org; Community Designer (released in beta in the Winter 15 release) will largely supersede Site.com by offering the use of templates to build and manage dynamic content.  Sites without templates can still be constructed using Site.com.
+
+Content is a method to upload and distribute documents and files in Salesforce.
+
+Content libraries are used to segment and secure access to content.
+
+ 
+
+Chatter Tabs
+
+Chatter is a built-in communication tool within Salesforce.  It combines some features of Twitter, Facebook, and chat but is accessible only by users licensed in your Salesforce org.  Chatter licensing options (including free) allow you to extend Chatter access to non-Salesforce users and customers.
+
+The Chatter tab allows you to see your Chatter feed and post to Chatter (which can also be done from other areas within Salesforce).
+
+The People tab allows users to search for and follow Chatter users.
+
+The Profile tab allows a user to view and edit their Chatter profile.
+
+The Groups tab allows users to find, follow, and create Chatter groups.
+
+The Files tab allows users to search for files posted to Chatter, and upload new files to their Chatter feed.
+
+ 
+
+Service Cloud Objects
+
+Service Contracts are used to represent an agreement between you and your customers (e.g. warranty, subscription, or SLA).
+
+Entitlements are used to determine eligibility for support based on the customer’s specific assets, accounts, or service contracts.
+
+Entitlement Templates are used to define the terms of support (e.g. customer A is provided support via email only, while customer B is provided support via both email and phone).
+
+Milestones are defined steps that support reps must complete as they respond to the case (e.g. returning a customer call or sending a customer an email).
+
+Entitlement Processes are used to set a timeline for completion of different milestones (e.g. first response is required within 48 hours of case submission).
+
+Knowledge Articles are a method to capture responses to commonly requested information (e.g. here are the specific steps to remove paper from this printer when jammed).  Knowledge is similar in function to Solutions, but is more feature rich and better integrated with the Service Cloud (and carries an additional license fee as well).
