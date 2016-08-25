@@ -1,0 +1,51 @@
+What is a Sandbox?
+
+A sandbox is a copy of a production environment used for a variety of purposes, commonly including testing and development.
+
+Here’s how it works:  When you create or refresh (essentially deletes and recreates a sandbox using the same name) a sandbox, a copy of the production environment at that point in time is made.  The vast majority of the configuration remains the same as the production org.  There are a few tweaks to sandboxes during the copy process – for example the sandbox name (e.g. Dev1) is appended to the username of all users within the sandbox.  Some types of sandboxes will allow you to specify data to be copied from production into the sandbox as well (see below).  If no data is copied (e.g. developer edition sandbox), then all of the configuration (metadata) will be migrated, but no records will be present.
+
+What’s the goal?
+
+Let’s say that I want to build a new Force.com application – I would start by building and testing that application in a sandbox.  Once I am satisfied with the application, I can then migrate the metadata and data (if applicable) to the production environment.  By performing this configuration in a non-production environment, I am free to test and experiment without running the risk of creating unused configuration/fields, interfering with an existing application in use, and other such concerns.
+
+Many enterprise companies will use a multi-staged deployment methodology – the most common example is development and unit testing in one sandbox (usually a developer sandbox), promotion to QA (usually a full sandbox), then promotion to production.
+
+https://help.salesforce.com/HTViewHelpDoc?id=create_test_instance.htm&language=en_US
+
+Login URLs
+
+To login to a sandbox, you must use the sandbox URL.  Likewise, logging into production requires using the production URL.  This applies to login via the website and API alike.
+
+Production: https://login.salesforce.com
+Sandbox: https://test.salesforce.com
+
+Migrating Metadata Between Environments
+
+Several tools exist to help an administrator or developer migrate metadata (configuration changes) from one environment to another.  The two most-commonly used tools are:
+
+1. Change Sets: native tool, admin-friendly (development experience not required)
+
+Note that the use of change sets requires a production environment with an accompanying sandbox.  Developer Edition does not include a sandbox and therefore change sets are not available in DE orgs.  You need an Enterprise Edition or higher org to use change sets.
+
+Change Sets Overview
+[Could / Short / Salesforce.com]
+
+Salesforce's Change Set Feature
+[Could / 22m / Nubik]
+
+2. Force.com IDE: developer toolkit, desktop application (developer-oriented)
+
+Force.com IDE
+[Could / Medium / Salesforce.com]
+
+This guide will not cover these tools in any more depth, as this is out of scope for the Salesforce.com Certified Administrator Exam.
+
+Lessons Learned
+
+This guide will not cover sandboxes in depth, as it is not required for ADM201 certification.  However, I would like to share a few lessons I’ve learned working extensively with sandboxes throughout the years:
+
+Your sandbox will get out of sync with your production environment almost immediately.  If you make regular configuration changes in your production environment (or in multiple development environments), this is problematic.  Plan accordingly; there isn’t an easy solution.
+Test your deployment.  Change sets are a great tool, as is the IDE.  Both can act in ways you might not expect- create another sandbox and test your deployment from one sandbox to another (assuming you have the sandboxes to do so), especially if you are new to the process.  Use the preview deployment feature of change sets to your advantage.
+Promotion of profiles is problematic; change sets are much easier.
+The amount of data in your production org can dramatically increase the time it takes to create a full sandbox (with all data included).  In one case, I saw a sandbox take over 5 days to be created (millions of records).
+When you create a full sandbox, the record IDs (accounts, contacts, etc.) will match the production environment (the org id will be different).  However, as soon as you create new records in either environment, the new record IDs will not match.
