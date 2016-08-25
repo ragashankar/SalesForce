@@ -1,0 +1,47 @@
+Developer Edition (DE)
+
+Developer Edition is similar in functionality to Enterprise Editions listed below (but has much lower storage), 
+and include a limited number of a variety of licenses (Sales Cloud, Service Cloud, Community, etc.).  
+These accounts are used exclusively for testing and development, and are provided for free by Salesforce to encourage 
+the community to build and test on the platform.  They cannot be converted to any other edition and do not expire.
+---------------------------------------------------------------------------------
+Sales Cloud Editions
+
+SalesforceIQ Starter – Limit Max # Users
+Professional Edition (PE) – Campaign Management
+Enterprise Edition (EE) – Workflow, API, Flow, Record Types, Developer Sandbox
+Unlimited Edition (UE) – Higher Limits, Full & Developer Pro & Developer Sandboxes, Premier Admin/Support/Training
+
+http://www2.sfdcstatic.com/assets/pdf/datasheets/DS_SalesCloud_EdCompare.pdf
+
+-----------------------------------------------------------------------------------
+
+Service Cloud Editions
+
+Professional Edition
+Enterprise Edition
+Unlimited Edition
+
+http://www2.sfdcstatic.com/assets/pdf/datasheets/DS_ServiceCloud_EdCompare.pdf
+
+-----------------------------------------------------------------------------------
+
+Force.com Editions
+
+Force.com licenses can grant users access to custom objects and applications at a much lower price than
+Sales or Service Cloud licenses – however, access to CRM objects is limited.
+
+http://www2.sfdcstatic.com/assets/pdf/datasheets/DS_Forcedotcom_EdCompare.pdf
+
+------------------------------------------------------------------------------------
+
+Mixing and Matching Licensing
+
+You can mix and match only licenses of the same edition within a single org for Sales Cloud, Service Cloud, and Force.com editions.
+
+For instance, I could add Professional Edition Service Cloud licenses to an org with existing Professional Edition Sales Cloud licenses.  
+However, I could not add Enterprise Edition Service Cloud licenses to an existing org with Professional Edition Sales Cloud licenses.
+
+It is often possible to purchase specific features of other editions, rather than upgrading outright. 
+For example, workflow rules are available in Professional Edition for an additional cost.
+
