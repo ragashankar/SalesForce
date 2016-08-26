@@ -34,5 +34,26 @@ In that case, we can click Edit and click "Generate new password and notify user
 run on specifed time, then that should not break. The admin can freeze the user, reassign all the jobs to other active user
 and then deactivate this User (by clicking edit and unchecking the active box)
 
+---------------------------------------------------------------------------------------------------------------------------
+Localization Settings:
+Locale, Language, Time Zone and Currency
+
+Locale :  Displayed format (Dates, time,numbers,names,address)
+
+Language : Three diff types of lang support, Fully supported,end user lang, Platform lang.
+
+Fully supported : admin setup and help menu change automatically,std objs/apps auto, custom fields manual change.
+
+End user : Admin help and setup not auto, std objs/apps change auto, custom field manual
+
+Platform lang: Admin and help not auto, std obj/app not auto,custom manual
 
 
+Time zone: Sets acc to the user time.
+
+Currency : 
+Single currency : Enabled by default, Currency locale is Org wide, no conversion rates
+
+Multiple currency :  Feture Request (contavct salesforce),Currency locale is per user,Fixed conversion rates
+
+Advanced currency mgmt : Enabled by config(requires multiple currencies),Currency locale is per user, Dated rates.
