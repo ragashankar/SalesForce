@@ -1,0 +1,5 @@
+Several different ways to Login to salesforce:
+1. Web Browser - May require computer activation
+2. API -  Data Loader, May require security token
+3. Single sign on
+4.Oauth
