@@ -1,5 +1,28 @@
 Several different ways to Login to salesforce:
 1. Web Browser - May require computer activation
 2. API -  Data Loader, May require security token
-3. Single sign on
-4.Oauth
+3. Single sign on - Requires company's cred to login to salesforce without needing to login again
+4.Oauth - Allows ext apps to ask permission to access salesforce
+
+Login for different envi:
+Production - login.salesforce.com
+Sandbox - test.salesforce.com
+
+--------------------------------------------------------------------------------------------------------
+Login on specific times:
+Login hours configurable on hourly basis
+Can configure users to login only under specific times (Mon-Fri 9a-5p)
+Can prevent users from login under non-working hours and maintenance hours(any updation..)
+--------------------------
+Login from Specific IP address:
+Prevent login of users except for specific IP address (Trusted IP ranges)
+1. Prevent login from home ( by adding company's public IP adress ranges to list of login IP ranges in profiles)
+2. Users must connect thro VPN
+3. When users login from Trusted IP ranges, company activation and security token not required.
+4. Configured Org-wide.
+--------------------------
+How salesforce can confirm login identity:?
+1. Loginfrom trusted IP range
+2. User previous login from browser (cookies)
+3. User prev login from current IP address.  --- removed as of 2016
+
