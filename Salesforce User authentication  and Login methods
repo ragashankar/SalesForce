@@ -26,3 +26,7 @@ How salesforce can confirm login identity:?
 2. User previous login from browser (cookies)
 3. User prev login from current IP address.  --- removed as of 2016
 
+API Login:
+Security Token required when Login from API except for truested network
+Computer activation not req when login from API.
+
