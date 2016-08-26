@@ -33,3 +33,24 @@ Computer activation not req when login from API.
 Website Login:
 Security token not req
 Comp activation required when login
+
+-----------------------------------------------------------------------------------------------------------------
+Logging as a User while you're an admin:
+
+You can grant login access to the administrator to all users.  This setting may be enabled by default in newer orgs.
+Navigate to Setup –> Security Controls –> Login Access Policies.
+Check ‘Enabled’ next to ‘Administrators Can Login as Any User’.
+Click Save.
+
+Now, as the system administrator you can login as James without using his username/password.
+
+Login to Salesforce (using your administrator credentials).
+Setup –> Manage Users –> Users –> Click Login next to James Smith.  This will show a black bar in the top right of the screen that shows you are now logged in as another user.  All actions that you take while logged in as James will appear as if James performed them (just as if you had logged in using his username and password).  Likewise any reports or any other functionality that you access will be done in accordance with James Smith’s security settings.
+Click Create New –> Lead.  Enter lead information, save the record.  Verify lead creator is James Smith.
+Logout.  You should be returned to James Smith’s user record – you are now returned to your session as the system administrator.
+-------------------------------------------------------------------------------------------------------------------
+User providing access to the admin to login as an user:
+You can have James Smith grant access to the system administrator.
+Login to Salesforce (using the email generated from the previous exercise) as James Smith.
+Setup –> My Personal Information –> Grant Login Access –> Your Company’s Administrator: One Year –> Save.
+Click Your Name –> Logout
