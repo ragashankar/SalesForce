@@ -1,3 +1,13 @@
+What is a profile?
+
+A profile is a collection of permissions and settings that is instrumental in determining a user’s functional access (apps, tabs, object-level permissions), how information is displayed to the user (page layouts, record types, field-level security), and a wide range of other permissions.  Each user must be assigned one profile.
+
+        SECURITY                          USER INTERFACE
+        Org-level permissions             Apps
+        Object-level permissions          Tabs
+        Field-level permission            Page layout
+        User permission                   Record types
+
 To manage a profile:
 Got to Setup -> Administer -> Manage Users -> profiles
 Click a profile, say, Ur profile as System admin
@@ -15,7 +25,7 @@ To go back to sys admin profile, we can click settings display in the console,an
 
 --------------------------------------------------------------
 Profile overview -> Under Apps -> Object settings : Permissions to access objects and fields, and settings that specify which record types, page layouts, and tabs are visible
-Click Obj settings -> U have 5 columns,Obj name,permission,fieldstab settings,page layouts.
+Click Obj settings -> U have 5 columns,Obj name,permission,fields,tab settings,page layouts.
 Click on any obj,say,oppurtunity,U'll see Tab settings,Page layout assignments,Obj permissions,field permissions.
 
 Tab settings: Default On,Default Off, Tab hidden. can change whether obj/tab is displayed or not.
@@ -25,3 +35,6 @@ Obj permission :  U cannot change anything here (Read,create,delete,edit,view al
 Field permissions : U have read access and edit access that u can tick in various fields and give permissions accordingly.
 Some fields are read-only eg: Last modified by, where that siled is system generated and cannot be edited.
 
+User permissions specify what tasks users can perform and what features users can access. For example, users with the “View Setup and Configuration” permission can view Setup pages, and users with the “API Enabled” permission can access any Salesforce API.
+You can enable user permissions in permission sets and custom profiles. In permission sets and the enhanced profile user interface, these permissions—as well as their descriptions—are listed in the App Permissions or System Permissions pages. In the original profile user interface, user permissions are listed under Administrative Permissions and General User Permissions.
+To view permissions and their descriptions, from Setup, enter Permission Sets in the Quick Find box, then select Permission Sets, then select or create a permission set. Then from the Permission Set Overview page, click App Permissions or System Permissions.
