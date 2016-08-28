@@ -1,0 +1,14 @@
+If we wanna create a specific role to assign that to the User, we need to understand the role hierarchy.
+
+Example:
+I am a System admin. I grant access and permissions to the Users. But i want to delegate my work to another user(junior sys admin)
+I have assigned myself as the role of CEO so that I can see all the records under me.
+Now, i clone my profile to create a similar profile (Manage Users ->profile->Sys Admin->Clone button)
+
+For that, same license is assigned, and the role,say,marketing is assigned.
+Now, as a system admin, i have created an opportunity record that i can only view because my sharing rule org-wide is private.
+
+Now, when the Junior sys admin logs in, he has a role of marketing under the CEO, so he cannot view that record even though he has create,view
+edit,delete access at the object level permission given in his profile.
+
+Manage users -> roles -> setup role -> new role ->See the active users list displayed and assign any role.
