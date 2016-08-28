@@ -1,0 +1,27 @@
+To manage a profile:
+Got to Setup -> Administer -> Manage Users -> profiles
+Click a profile, say, Ur profile as System admin
+If u want an enhanced view of the profile, instead of detailed view, go to Customize -> User Interface -> check 'Enable Enhanced Profile User Interface' 
+U'll see what all users are assigned for that profile, say, for system admin, u'll be assigned ur name, just click 'ASSIGNED USERS' button
+U can search the settings search box in the enhanced profile page for any objs or apps.
+U can switch from obj to obj/apps by clicking the down arrow of that obj name.
+If u want a description for ur profile, click Edit properties - >Type the description of the profile
+
+In the profile - > Go to 'Assigned apps' -> Edit -> Add/remove the apps
+There is always one default app that must be available when the user (admin) logs in.
+Eg: We can add sample console toour existing apps.
+
+To go back to sys admin profile, we can click settings display in the console,and then click recent items 'sys admin' and go back.
+
+--------------------------------------------------------------
+Profile overview -> Under Apps -> Object settings : Permissions to access objects and fields, and settings that specify which record types, page layouts, and tabs are visible
+Click Obj settings -> U have 5 columns,Obj name,permission,fieldstab settings,page layouts.
+Click on any obj,say,oppurtunity,U'll see Tab settings,Page layout assignments,Obj permissions,field permissions.
+
+Tab settings: Default On,Default Off, Tab hidden. can change whether obj/tab is displayed or not.
+
+Obj permission :  U cannot change anything here (Read,create,delete,edit,view all,modify all)
+
+Field permissions : U have read access and edit access that u can tick in various fields and give permissions accordingly.
+Some fields are read-only eg: Last modified by, where that siled is system generated and cannot be edited.
+
