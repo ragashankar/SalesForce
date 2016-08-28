@@ -1,0 +1,32 @@
+Role - 
+The role hierarchy provides a framework to structure access to records and folders in your organization.Various settings (sharing rules, groups, folder sharing criteria, etc.) rely heavily on roles to structure access to content.
+
+
+Related to hierarchy
+Each user is assigned one role, which sets the foundation for their access to records and folders.
+
+While a user’s profile and permission sets determine if a user can run reports, their role will influence which report folders they can access.
+
+Grant Access Using Hierarchies
+
+“Grant Access Using Hierarchies” is a setting for configuring organization-wide defaults (Setup –> Security Controls –> Sharing Settings).  For most standard objects, the option is always enabled.  For custom objects, it is enabled by default but can be disabled.
+
+Users are granted full access (create, read, edit, delete) record-level permissions to the records meeting both criteria:
+
+The record is owned by a user in a subordinate role.
+The object has “Grant Access Using Hierarchies” enabled.
+
+Example
+
+Jim is assigned the role “VP, Northern American Sales”.
+Bob is assigned the role “Director, Direct Sales”.
+Org-wide default security for the account object is set to private.  No sharing rules or any other settings influencing record-level security have been configured.
+Jim and Bob are both assigned to a profile that provides CRED (create, read, edit, delete) object-level permissions to the account object.
+Result
+
+What access does Jim have to Bob’s account records?
+
+What access does Bob have to Jim’s account records?
+
+Ans: Jim can view, edit, and delete Bob’s account records.  Access to Bob’s records is provided by the role hierarchy, as Bob is in a subordinate role.
+Bob cannot view Jim’s account records, as the org-wide default for account is private.  Jim’s records are not shared with Bob, as Jim is in a higher role.
