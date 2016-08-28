@@ -1,0 +1,110 @@
+Security Overview
+This article provides an overview of how access to data and functionality is structured in Salesforce, which is primarily comprised of the following:
+
+Organization Security
+Object Security
+Record Security
+Field Security
+Folder Security
+
+Organization Security
+
+Org-level permissions determines under what conditions a user can login to Salesforce, and is explored in depth in User Setup & Login Process – Free.  A few key settings are:
+
+When users can login (Login Hours)
+Where users can login from (Login IP Ranges)
+How users can login (API, UI, etc.)
+Object Security
+
+Object-level permissions determines what actions (Create, Read, Edit, Delete) a user can perform on records of each object.
+
+In order to create a record of that object type, the user only needs the “Create” object-level permission.
+
+Record Security
+
+There are 3 tiers of record-level permissions:
+
+Read Only
+Read/Write
+Full Access
+“Read Only” and “Read/Write” access can be granted through a variety of means (org-wide defaults, sharing rules, etc.).  Users with the object-level permission “View All” (pictured unchecked above) are granted “Read Only” record-level permissions to all records of that object.
+
+“Full Access” is granted to:
+
+The record owner.
+Users higher in the role hierarchy than the record owner (when “Grant Access Using Hierarchies” is enabled).
+Users with “Modify All” object-level permission (this includes system administrators).
+Members of a queue to all records owned by the queue.
+It is not possible to share “Full Access” via sharing rules or other mechanisms at this time.
+
+
+ 	                      CREATE RECORD	  VIEW RECORD	  EDIT RECORD	  DELETE RECORD
+Object-level permission	  Create	          Read	        Edit	        Delete
+Record-level permission	  N/A	            Read Only	    Read/Write	    Full Access
+
+Example 1:
+Scenario:  A user must have the ability to create a lead records.
+Required permissions:
+
+“Create” object-level permission on Lead.
+
+Example 2:
+Scenario:  A user must be able to view an opportunity record owned by another user.
+Required permissions:
+
+“Read” object-level permissions on Opportunity.
+
+“Read Only” (or higher) record-level permissions on the record.
+
+Example 3:
+Scenario:  A user must be able to edit an account record owned by another user.
+Required permissions:
+
+“Edit” object-level permissions on Account.
+
+“Read/Write” (or higher) record-level permissions on the record.
+
+Example 4:
+Scenario:  A user must be able to delete an opportunity record owned by another user.
+Required permissions:
+
+“Delete” object-level permissions on Opportunity.
+
+“Full Access” record-level permissions on the record.
+
+Demystifying Record Deletion within Salesforce:
+
+“Full Access” is typically granted to the record owner, users higher in the role hierarchy, and system administrators.  As shown in example 4 above, “Full Access” record-level permission and “Delete” object-level permission are required in order to delete  record.
+
+This explains why some users may not be able to delete records, even when granted “Read/Write” record access via sharing rules or org-wide defaults.
+
+Important Notes:
+
+Not all objects will adhere exactly to the above rules (e.g. products, which do not have a record owner).
+If a user can edit (but not delete) a record and has the “Transfer Record” permission, they may be able to transfer the record to become its owner.  They may be able to then delete the record.
+
+Field-Level Security
+
+Field-level permissions determines which fields a user can view and edit on records of an object.  Field-level permissions have 2 settings:
+
+Read Access
+Edit Access
+
+RESULT	          READ ACCESS	    EDIT ACCESS
+Field Editable	  Checked	          Checked
+Field Read-Only	  Checked	          Unchecked
+Field Hidden	    Unchecked	        Unchecked
+
+A user must be able to view the record in order to view any fields on the record.  Likewise, if a user cannot edit a record, they will not be able to edit any fields.
+
+Note:  Page layouts also influence which fields a user can update within the User Interface, which is discussed in the future.
+
+Folder Security
+
+Folders are used to secure a variety of data within Salesforce, including but not limited to:
+
+Reports
+Dashboards
+Email Templates
+Documents
+
