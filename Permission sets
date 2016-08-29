@@ -1,0 +1,10 @@
+Permission sets are optionally used when we want to reduce the number of profiles that we've created and thereby reducing overhead
+admin scenarioes.
+
+For example: If a User, say, Dane has been assigned a marketing profile. She can read,edit records in account object but cannot delete it
+Now Dane wants to have delete previldge, as a necessity. We cannot keep on creating a new profile just for the exception cases like the above.
+For that, we have a solution called permission sets. Permission sets are those, where we can assign special permission to a User
+say, delete permit to Dane though she is in marketing profile which does not have that obj level permission.
+
+Through this, we give permit for Dane to delete records and also avoid create new profile just for her.
+
