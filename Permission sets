@@ -8,3 +8,16 @@ say, delete permit to Dane though she is in marketing profile which does not hav
 
 Through this, we give permit for Dane to delete records and also avoid create new profile just for her.
 
+
+
+Example 2
+
+Your organization has recently built an application in Salesforce to track job applicants.  Each department will have several users that will be provided access to manage their department’s career postings.
+
+Using just profiles, you would need to create a new profile for each user that needed access to the application (cloning the existing assigned profile and then adding the required privileges).  Instead, you could create a single permission set that grants the appropriate privileges and grant that permission set to each user as needed.
+
+Important Notes
+
+Permission sets can only grant (not revoke) privileges.
+Permission sets are optional, and a user can be assigned more than 1 permission set (a user is assigned zero to many permission sets).
+The profile controls some elements (e.g. page layout assignment) that a permission set cannot influence.
