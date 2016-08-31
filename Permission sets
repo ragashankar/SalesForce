@@ -21,3 +21,19 @@ Important Notes
 Permission sets can only grant (not revoke) privileges.
 Permission sets are optional, and a user can be assigned more than 1 permission set (a user is assigned zero to many permission sets).
 The profile controls some elements (e.g. page layout assignment) that a permission set cannot influence.
+
+Create a new permission set :
+Setup -> Administer -> Manage Users -> Permission sets
+Click New and create a perm set for a type of user liscense.
+
+Perm set for Lightning exp :
+
+Click Lightning exp under top left and go to a link where they say "Use Profiles or Permission Sets to Give Users Access to Lightning Experience"
+https://help.salesforce.com/htviewhelpdoc?id=lex_enable_users.htm&siteLang=en_US
+
+Lightning exp can be enabled for all std prof, it can be restricted to custom prof users by the admin
+
+setup-> Administer -> Manage Users -> Permission sets -> New -> fill out all details including which liscense users would use this
+click save
+Then, under that perm set view,Go to System settings -> Edit -> Check lightning exp user -> Save
+Under perm setd view, Click Manage Assignmnets button -> Add users to give this perm to enable/disable lightning exp on their own.
