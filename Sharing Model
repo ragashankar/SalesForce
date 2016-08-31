@@ -1,0 +1,40 @@
+Sharing model - Mostly relates to Org-wide defaults and sharing settings
+
+To find Org-wide defaults:
+1. Setup -> Admisinster -> security contrls- >sharing settings (or just stype sharing settings in the search dialog box)
+
+Note: The fundamental/baseleine of all security (security of all objs/records) in SF instance is the Org-wide defaults
+
+Concept: we Dont have org-wide defaults more open in the begining and create more restric thro layers of security. Instead, we have org-wide defaults more restricted in the begininng and then more open for users as u add other layers thro sharing settings.
+
+Note : Leads and cases have public read/write/transfer access for both int and external, since they can be created and transferred to another person to continue the task.
+
+2. Click Edit -> Default Internal access can be changed (we've to enable ext access sharing model button in org-wide defaults to change that)
+
+Note: Grant access using hierarchies option cannot be changed for std objs, but can be changed for custom objs
+Some records ( order,contact) are the child rec of objs such as account and they have an option called 'controlled by parent' i.e. the same settings apply for child rec as in parent objs.
+
+Enable External sharing model button:
+This is for changing the access of default external access. This is for Authenticated website users, chatter external users, community users, customer/partner / high vol users, service cloud users, guest users .
+
+3. Click Enable default ext access button -> Edit -> we can npw change default ext access options
+
+Note: Ext access options can be same or more restricted than int access options and cannot be more open.
+
+Example: When we dont want our comm users to see an obj, say, oppurtunity, we change the def ext acc to private. SF calculates what all rec might be impacted and make the necessary restrictions to the comm users and sends the admin with the mail when the oper has finished.
+
+--------------------------------------------
+
+Sharing Rules :
+
+Now we go to the sharing rules of all the objs (both std and custom objs). We've learnt how roles play out as regards to viewing i.e the rec can be roll up and be viewd by our manager who is in higher position than us in the hierarchy. That is vertical access
+
+Now, sharing rules provide lateral access i.e a salesperson in the eastern region, say India, can view our obj if we create sharing rule for our object.
+
+1. Click New ( for any obj, say opp under sharing rules) -> U have Label (give a name),rule name(automatic name assignment based on label name with no spaces),description,select opp type:based on owner or based on criteria,opp owned by members of (select role) i.e select which records to share with, select whom to share with (select role), opp access (Read-only or Read-write).
+
+Note: U cannot edit or change anything until the previous sharing rule that we've implemented has been done and an email is recieved to us.
+
+Manual User record sharing : Users can share their own rec i.e share vertically or laterally or randomly.
+
+
