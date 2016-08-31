@@ -42,3 +42,5 @@ To enable Lightning exp :
 Under lightning exp on top left of the setup page, go to last option to enable lightning exp.
 After enabling it, the users who have been assigned perm to switch to Li exp, will get an option under setup tab to switch.
 Clicking it will switch to Li exp.
+
+We can switch back to sf classic under our user  at top right.
