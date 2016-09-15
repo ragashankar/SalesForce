@@ -1,0 +1,20 @@
+Methods - collection of statements that are grouped together to perform an operation. Method is declared under a class
+ eg: public static void display() {
+ }
+ display() - method name
+ void - method does not have a return type...does not return anything
+ public - access modifier..method can be accessed anywhere
+----------------------------------------------------------------------------------------------
+Create a apex class:
+Click Our name in right top corner in SF page - > Dev console - > Force.com platform opened in another window
+File - > New -> Apex class
+Type the below code:
+
+ public static void display() {
+  System.debug('Hello World'); // Displays 'Hello World ' on the screen
+ }
+
+File - > save
+To run:
+Debug -> open exec anonymous window -> Enter Classname.methodname(); ( Hello.display();)
+Check in the log - > Debug only - > U will see the o/p.
