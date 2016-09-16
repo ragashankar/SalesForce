@@ -22,3 +22,16 @@ public class doWhile {
     }
 
 }                                                            // Prints 1 to 10
+
+--------------------------------------------------------------------------
+for loop:
+
+// Print 1,4,7,10,13,16
+public class LoopExample1 {
+    public static void example1(){
+        	Integer i;
+        for(i =1 ; i <=16; i=i+3){
+            System.debug('The value is '+i);
+        }
+    }
+}
