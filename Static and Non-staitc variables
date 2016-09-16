@@ -1,11 +1,11 @@
 Static variable:
 Let's say the many objects are created for a class.
 Every obj shares the value. The static var value can be changed only by accessing thro classname.
-Only one copy of the var is available.
+Only one copy of the var is available and that is shared among the objs.
 Static var CANNOT be accessed thro obj.
 
 Non-static variable:
-Each object has its own value to the variable. This is static var.
+Each object has its own value to the variable. This is non-static var.
 
 
 
