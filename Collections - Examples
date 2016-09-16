@@ -24,7 +24,20 @@ A set is an unordered collection of objects that doesn’t contain any
 duplicate values. Use a set when you don’t need to keep track of the
 order of the elements in the collection, and when the elements are
 unique and don’t have to be sorted.
+----------------------------------------------------------------------------------------------------------------------------
+Map Example:
+Maps are collections of key-value pairs, where the keys are of primitive
+data types. Use a map when you want to store values that are to be
+referenced through a key.
 
+Example:
+Map<Integer,String> mp = new Map<Integer,String>();
+mp.put(1,'Raghav');
+mp.put(2,'Nishanth');
+mp.put(3,'Revanth');
+
+System.debug('Mapper values are '+mp);
+System.debug('Mapper value for key 2 is '+mp.get(2));
 Example:
 
 Set<String> s = new Set<String>{'a','b','c','d','e'};
