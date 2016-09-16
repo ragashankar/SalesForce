@@ -1,0 +1,15 @@
+public class staticExample {
+    public static void method1(){
+        System.debug('I am a static method');
+    }
+    public void method2(){                                  // creating a non-static method (static keyword not mentioned)
+        System.debug('I am a non-static method');
+    }
+}
+In the Execute Anonymous block, type the following:
+staticExample.method1(); // Since method1 is static, its directly called with the classname
+staticExample s=new staticExample(); 
+s.method2();              // Since method2 is non-static, an obj is created for the class and the method is called thro that object.
+
+Wrong code:
+staticExample.method2(); // Displays error that Method is not available.
