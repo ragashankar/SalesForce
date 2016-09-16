@@ -1,0 +1,27 @@
+Static variable:
+Let's say the many objects are created for a class.
+Every obj shares the value. The static var value can be changed only by accessing thro classname.
+Only one copy of the var is available.
+Static var CANNOT be accessed thro obj.
+
+Non-static variable:
+Each object has its own value to the variable. This is static var.
+
+
+
+public class staticExample2 {
+	public String name;
+   public static Integer value;
+}
+
+In the exec ananymous window:
+staticExample2 s1 = new staticExample2();
+staticExample2 s2 = new staticExample2();
+s1.name = 'Raghav';
+s2.name = 'Gaayu';
+staticExample2.value = 3;
+System.debug('s1 name '+s1.name);
+System.debug('s2 name '+s2.name);
+staticExample2.value++;
+System.debug('Value is '+staticExample2.value);
+
