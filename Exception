@@ -1,0 +1,20 @@
+try{
+    Lead h = new Lead();    // No values for mandatory  fields specified. Throws Exception.
+	insert h;
+} catch(Exception e){       // catch block runs to handle exception
+    System.debug('Please specify the mandatory fields.');
+    
+}
+finally{
+    System.debug('Is it inserted');        // Runs no matter exception happened or not
+
+------------------------------------------------------------------------------------------------------------------------------
+try{
+    Lead h = new Lead(Lastname='Jayaraman',Company='StarTrek');    //  values for mandatory  fields specified. Does not throw Exception.
+	insert h;
+} catch(Exception e){                                            // catch block does not run
+    System.debug('Please specify the mandatory fields.');
+    
+}
+finally{
+    System.debug('Is it inserted');        // Runs no matter exception happened or not
