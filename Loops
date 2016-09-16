@@ -1,0 +1,24 @@
+While:
+public class Whileloop {
+    public static void whileexample(){
+        integer i = 1;
+        while( i <=10){
+            System.debug('The number of iteration is'+' '+i);
+            i++;
+        }
+    }
+
+}                                                           // Prints 1 to 10
+----------------------------------------------------------------------
+DoWhile:
+public class doWhile {
+    public static void dowhileexample(){
+        integer p = 1;
+        do {
+            System.debug('This will definetly print p as '+p);
+            p++;
+            
+        } while(p <=10);
+    }
+
+}                                                            // Prints 1 to 10
