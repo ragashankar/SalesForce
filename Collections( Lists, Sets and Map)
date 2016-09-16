@@ -1,0 +1,29 @@
+Lists - Contain elements that can be repeated ( can contain  duplicate elements)
+Set - Does not contain duplicate elements
+Map - Based on Key-value pairs
+
+Lists example:
+
+In Exec anonymous window :
+List<String> l = new List<String>();
+l.add('Apple');
+l.add('Orange');
+l.add('Apple');
+l.add('Banana');
+l.add('Pomo');
+System.debug('Elements in List l are '+l); // Here apple is duplicated and considered.
+
+Set Example:
+Set<String> l = new Set<String>();
+l.add('Apple');
+l.add('Orange');
+l.add('Apple');
+l.add('Banana');
+l.add('Pomo');
+System.debug('Elements in Set l are '+l);      // Here Apple is displayed only once. Duplicate values are not considered.
+
+Map example:
+Map<String,String> m = new Map<String,String>{'a'=>'apple','b'=>'banana','c'=>'Cucumber'};
+System.debug('Map elements are '+m);  // Displays all the elements in the map
+
+System.debug('Map of key \'a\' is '+m.get('a')); // Displays the value of the speicfied key
