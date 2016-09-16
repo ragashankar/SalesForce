@@ -1,0 +1,42 @@
+List example:
+list collection type that holds an ordered collection of
+objects. You will use a list whenever you want to store a set of values
+that can be accessed with an index.
+You can access an element of a list using a zero-based index, or by
+iterating over the list.
+
+List<Integer> lst = new List<Integer>{78,65,32,97,45,65,22};
+lst.add(86);
+
+for(Integer i =0;i < lst.size();i++){
+    System.debug(''+lst[i]);
+}
+Integer i = lst[3]; // Stores 97 in i
+Integer j = lst.get(4); // Stores 45 in j
+System.debug('Elements in the list lst are '+lst);
+System.debug('The length of list lst is '+lst.size()); // Method size() is used to find the length of the list
+System.debug('Sixth Element in the list is '+lst[5]); // [] Array index can be specified for the list to print the specific value
+System.debug('Third element in the list is '+lst.get(2)); // get() can also be specified instead of [] to print the specific val.
+System.debug('The fourth and the fifth elements are '+i+' '+' and '+j+' respectively');
+--------------------------------------------------------------------------------------------------------------------------
+Set example:
+A set is an unordered collection of objects that doesn’t contain any
+duplicate values. Use a set when you don’t need to keep track of the
+order of the elements in the collection, and when the elements are
+unique and don’t have to be sorted.
+
+Example:
+
+Set<String> s = new Set<String>{'a','b','c','d','e'};
+s.add('d'); // Does not get added.
+s.add('f'); // Gets added.
+
+if(s.contains('c')){
+    System.debug('The set s contains b and the size of set s is '+s.size());
+}
+else{
+    System.debug('The set does not contain b');
+}
+
+P.S : I cannot use for loop to iterate over values. I get an error saying that set s is not a list
+
