@@ -1,0 +1,47 @@
+In Apex, we have 4 access modifiers: Private, Public, protected and global.
+Default access modifier- private i.e if u dont specify anything to a variable/method, it is considered as private.
+
+By default, a method or variable is visible only to the Apex code within the defining class. You must explicitly specify a method or variable as public in order for it to be available to other classes in the same application namespace (see Namespace Prefix). You can change the level of visibility by using the following access modifiers:
+
+private
+This is the default, and means that the method or variable is accessible only within the Apex class in which it is defined. If you do not specify an access modifier, the method or variable is private.
+
+protected
+This means that the method or variable is visible to any inner classes in the defining Apex class, and to the classes that extend the defining Apex class. You can only use this access modifier for instance methods and member variables. Note that it is strictly more permissive than the default (private) setting, just like Java.
+
+public
+This means the method or variable can be used by any Apex in this application or namespace.
+
+Note: In Apex, the public access modifier is not the same as it is in Java. This was done to discourage joining applications, to keep the code for each application separate. In Apex, if you want to make something public like it is in Java, you need to use the global access modifier.
+
+global
+This means the method or variable can be used by any Apex code that has access to the class, not just the Apex code in the same application. This access modifier should be used for any method that needs to be referenced outside of the application, either in the SOAP API or by other Apex code. If you declare a method or variable as global, you must also declare the class that contains it as global.
+----------------------------------------------------------------------------------------------------------------------------
+
+public class accessModifiers {
+	private String name;
+    private Integer age;
+    public void name(String n){
+        name = n;
+    }
+    public void age(Integer a){
+        if(a < 0){
+            System.debug('You cannot set the age to below zero');
+            age = 0;
+        } else {
+            age = a;
+        }
+    }
+    public void disp(){
+        System.debug('My name is '+name);
+        System.debug('My age is '+age);
+    }
+}
+
+In the execute anonymous windoe:
+accessModifiers a = new accessModifiers();
+a.name('Raghav');
+a.age(-3);
+a.disp();
+
+//a.name = 'Nish'; // cannot be called by obj since name is defined as private.
