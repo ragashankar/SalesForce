@@ -1,0 +1,41 @@
+Constructors have the same name as class name. They are created as methods inside that class and they are called while creating an object itself.
+
+Uses:  Eveytime we create an obj, memory gets allocated. To avoid that, some fns are called by creating constructors.
+
+public class Constructors {
+	private Integer num;
+    public String name;
+    private String classsec;
+    private Integer age;
+    public String address;
+    public Constructors(){
+        num = 1;
+        name='Ragha';
+        classsec = '3rd B';
+        age = 9;
+        address = '5, Y, Nagarathinam street, Pammal, Chennai - 75';
+        System.debug('This block i.e the constructor block is called while creating an object itself');
+    }
+    public Constructors(String Country){
+        
+        System.debug('The Country is '+Country);
+    }
+    public void disp(){
+        System.debug('The disp method is called when an object of this class call it');
+        System.debug('ID is '+num);
+        System.debug('Name is '+name);
+        System.debug('The class and section are '+classsec);
+        System.debug('The age of the student is '+age);
+        System.debug('The address of the student is '+address);
+    }
+}
+
+In the execute anonymous block:
+Constructors b = new Constructors('India');   // The constructor md. with the arg is called while creating the object. No need of obj                                               to call them.
+Constructors c = new Constructors(); // The constructor md. without the arg is called while creating the obj.
+c.disp();                             // disp method is called by obj created in the class.
+c.name = 'Raghavendran';              // name is a public variable, so can be called by an obj
+// c.age = 25;                        // Age is private, so cannot be accessed by an obj. Can be accessed directly by classname
+c.disp();                             // disp is called again and now the name is displayed as 'Raghavendran' , age is not changed.
+
+
