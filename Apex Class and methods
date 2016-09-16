@@ -18,3 +18,36 @@ File - > save
 To run:
 Debug -> open exec anonymous window -> Enter Classname.methodname(); ( Hello.display();)
 Check in the log - > Debug only - > U will see the o/p.
+------------------------------------------------------------------------------------------
+Calculating Simple Interst
+public class SimpleInterest {
+    public static void simInt(){
+        Integer p = 1500;
+        
+        double si,r=20.0,n=3;
+        si = (p*n*r)/100;
+        System.debug('The Simple Interest is '+si);
+    }
+}
+--------------------------------------------------------------------------------------------
+Using If-else condition:
+
+public class Win {
+
+    public static void winner(){
+        Integer num = 1;
+        if(num==1)
+        {
+            
+            	System.debug('The starks won');
+        } else if(num==2){
+            System.debug('The Lannis won');
+        } else if(num==3){
+            System.debug('The Targy won');
+        } else{
+            System.debug('It\'s a tie ');
+        }
+     
+          
+    }
+}
