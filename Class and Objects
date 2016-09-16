@@ -1,0 +1,39 @@
+public class classobj {
+	public String clan1;
+    public String clan2;
+    public Integer alive1;
+    public Integer alive2;
+   public void disp(){
+        System.debug('The number of members alive in '+clan1+' are '+alive1);
+        System.debug('The number of members alive in '+clan2+' are '+alive2);
+    }
+}
+
+In the execute Anonymous block type below :
+classobj r=new classobj();
+r.clan1 = 'Starks';
+r.clan2 = 'Lannisters';
+r.alive1 = 3;
+r.alive2 = 2;
+r.disp();
+-------------------------------------------------------------------------------------------------------------------
+//Employee name and designation:
+
+public class classobj2 {
+	public String Empname;
+    public String Empdesig;
+    public void disp(){
+        System.debug('The Employee name is '+Empname);
+        System.debug('The Employee designation is '+Empdesig);
+    }
+}
+In the execute Anonymous block type below :
+classobj2 Employee=new classobj2();
+classobj2 Employee2=new classobj2();
+Employee.Empname = 'Raghav';
+Employee.Empdesig = 'Salesforce Developer';
+Employee2.Empname = 'Nishanth';
+Employee2.Empdesig = 'Data Analyst';
+Employee.disp();
+Employee2.disp();
+
